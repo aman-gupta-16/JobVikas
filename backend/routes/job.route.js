@@ -12,8 +12,8 @@ const router = express.Router();
 
 // Define a route to retrieve all available books
 router.post("/post", isAuthenticated, postJob);
-router.get("/get", isAuthenticated, getAllJobs);
+router.get("/get", getAllJobs);
 router.get("/getadminjobs", isAuthenticated, getAdminJobs);
-router.get("/get/:id", isAuthenticated, getJobById);
+router.get("/get/:id", getJobById);
 
 export default router;
